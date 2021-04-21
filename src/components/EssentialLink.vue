@@ -1,32 +1,21 @@
 <template>
-  <q-item>
-  
-  </q-item>
+  <q-toolbar class="container-lg">
+    <q-toolbar-title>
+      ExecWash
+    </q-toolbar-title>
+    <div class="flex">
+      <q-btn stretch flat label="home" to="/" />
+      <q-btn stretch flat label="services" to="/ServicesPage" />
+      <q-btn stretch flat label="appointment" to="/AppointmentPage" />
+      <q-btn stretch flat label="gallery" to="/GalleryPage" />
+      <q-btn stretch flat label="about us" to="/AboutUsPage" />
+      <q-btn stretch flat label="contact us" to="/ContactUsPage" />
+    </div>
+  </q-toolbar>
 </template>
 
 <script>
 export default {
-  name: 'EssentialLink',
-  props: {
-    title: {
-      type: String,
-      required: true
-    },
-
-    caption: {
-      type: String,
-      default: ''
-    },
-
-    link: {
-      type: String,
-      default: '#'
-    },
-
-    icon: {
-      type: String,
-      default: ''
-    }
-  }
-}
+  name: "EssentialLink"
+};
 </script>

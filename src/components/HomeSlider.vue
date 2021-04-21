@@ -1,5 +1,5 @@
 <template>
-  <q-page>
+  <div class="Home__slider_wrapper">
     <!-- NOTE: carousel  section -->
     <div class="Home__slider">
       <q-carousel
@@ -29,7 +29,7 @@
         </q-carousel-slide>
       </q-carousel>
     </div>
-  </q-page>
+  </div>
 </template>
 
 <script>
