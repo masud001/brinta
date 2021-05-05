@@ -7,14 +7,16 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <Footer></Footer>
   </q-layout>
 </template>
 
 <script>
 import EssentialLink from "components/EssentialLink.vue";
-
+import Footer from "components/Footer.vue";
 export default {
-  components: { EssentialLink },
+  components: { EssentialLink,Footer },
   name: "Layout",
   data() {
     return {

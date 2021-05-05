@@ -1,5 +1,5 @@
 <template>
-  <q-toolbar class="container-lg">
+  <q-toolbar class="container-lg bg-color">
     <q-toolbar-title>
       ExecWash
     </q-toolbar-title>
@@ -19,3 +19,13 @@ export default {
   name: "EssentialLink"
 };
 </script>
+
+<style scoped>
+
+.bg-color{
+  background-color:#FAF5FF;
+  color:#000;
+}
+
+
+</style>

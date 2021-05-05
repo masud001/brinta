@@ -1,6 +1,11 @@
 // app global css in SCSS form
 // breakpoint variable, from https://quasar.dev/style/breakpoints
 // Except the xs one because I think 600px is too small
+
+// add some css for global uses
+
+@import "buttons";
+
 $xs-breakpoint: 718px;
 $sm-breakpoint: 1024px;
 $md-breakpoint: 1439px;

@@ -1,6 +1,6 @@
 <template>
   <div class="car__wizard_wrapper container-lg">
-    <div class=" q-px-lg q-py-xl">
+    <!-- <div class=" q-px-lg q-py-xl">
       <div class="row q-col-gutter-lg">
         <div
           class="col-12 col-sm-6 col-md-4"
@@ -29,7 +29,40 @@
           </q-card>
         </div>
       </div>
+    </div> -->
+      <div class="q-px-lg q-py-xl">
+    <div class="q-col-gutter-xl  row items-start">
+      <div class="col-4 text-center">
+       
+        <q-img class="q-mb-lg"
+          src="/price-wizard/car-1.svg"
+          
+        />
+         <h6 class="no-margin"> Car </h6>
+         <h4 class="no-margin text-deep-purple-13 text-weight-bolder"> $20 & UP </h4>
+      </div>
+
+      <div class="col-4 text-center">
+       
+        <q-img class="q-mb-lg"
+          src="/price-wizard/car-2.svg"
+         
+        />
+       <h6 class="no-margin"> Mid-Size Truck/SUV </h6>
+        <h4 class="no-margin  text-deep-purple-13 text-weight-bolder"> $20 & UP </h4>
+      </div>
+
+      <div class="col-4 text-center">
+        
+        <q-img class="q-mb-lg"
+          src="/price-wizard/car-3.svg"
+          
+        />
+        <h6 class="no-margin"> Full-Size Truck/SUV </h6>
+         <h4 class="no-margin  text-deep-purple-13 text-weight-bolder"> $20 & UP </h4>
+      </div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -73,4 +106,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.car__wizard_wrapper{}
+.car__wizard_wrapper .q-img{
+  width:90%;
+}
+</style>
