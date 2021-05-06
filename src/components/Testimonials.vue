@@ -1,5 +1,5 @@
 <template>
-  <div class="text-dark shadow-1  q-pb-xl">
+  <div class="text-dark container-lg   q-pb-xl">
     <SectionHeader :title="sectiontitle"></SectionHeader>
     <div class="slide">
       <div class="ancestor" id="box-1">

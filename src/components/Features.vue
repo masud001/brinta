@@ -99,7 +99,7 @@ export default {
   right: 15px;
 }
 .card__height {
-  min-height: 500px;
+  min-height: 443px;
 }
 .card__section {
   min-height: 269px !important;

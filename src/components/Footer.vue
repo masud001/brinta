@@ -125,7 +125,7 @@
 }
 .single-footer-widget .footer-menu li a:hover,
 .single-footer-widget .footer-menu li a:focus {
-	color: #f1c40f;
+	color: #ffffff;
 }
 .single-footer-widget .footer-menu li:last-child a {
 	margin-bottom: 0;

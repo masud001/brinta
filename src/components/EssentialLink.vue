@@ -1,5 +1,6 @@
 <template>
-  <q-toolbar class="container-lg bg-color">
+<div class=" bg-color">
+  <q-toolbar class="container-lg">
     <q-toolbar-title>
       ExecWash
     </q-toolbar-title>
@@ -12,6 +13,7 @@
       <q-btn stretch flat label="contact us" to="/ContactUsPage" />
     </div>
   </q-toolbar>
+  </div>
 </template>
 
 <script>
