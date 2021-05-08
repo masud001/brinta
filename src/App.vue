@@ -1,10 +1,16 @@
 <template>
   <div id="q-app">
-    <router-view />
+    <transition
+      name="router-anim"
+      enter-active-class="animated fadeIn"
+      leave-active-class="animated fadeOut"
+    >
+      <router-view />
+    </transition>
   </div>
 </template>
 <script>
 export default {
-  name: 'App'
-}
+  name: "App"
+};
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="feature__title  text-center text-uppercase q-pt-lg text-h3">
+    <div class="feature__title  text-center text-capitalize q-pt-lg text-h3">
       {{ title }}
     </div>
   </div>

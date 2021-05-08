@@ -9,9 +9,9 @@
             v-for="(data, i) of featuresData"
             :key="i"
           >
-            <q-card class="my-card card__height" flat bordered>
+            <q-card class="my-card card__height" flat>
               <div class="image__wrapper">
-                <q-img class="card__image" :src="data.bgImg" :ratio="16/9">
+                <q-img class="card__image" :src="data.bgImg" :ratio="16 / 9">
                   <div class="image__overlay">
                     <div class="overlay__content">
                       <q-icon name="style" />
@@ -48,7 +48,7 @@ export default {
   name: "Features",
   data() {
     return {
-      sectiontitle: "FEATURED WORKS",
+      sectiontitle: "featured works",
       showText: {},
       featuresData: [
         {
@@ -92,7 +92,7 @@ export default {
 };
 </script>
 
-<style >
+<style>
 .icons__eye {
   position: absolute;
   bottom: 15px;
@@ -135,7 +135,7 @@ export default {
   text-align: center;
   transform: translate(-50%, -50%);
 }
-.card__image .q-img__image{
-  background-size:contain!important;
+.card__image .q-img__image {
+  background-size: contain !important;
 }
 </style>

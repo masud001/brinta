@@ -1,15 +1,15 @@
 <template>
   <div class="q-pb-xl">
-    <div class="container-lg">
+    <div class="container-md">
       <SectionHeader :title="sectiontitle"></SectionHeader>
-      <div class="q-px-lg q-py-xl">
+      <div class="q-px-lg pricitable__wrapper">
         <div class="row q-col-gutter-lg">
           <div
-            class="col-12 col-sm-6 col-md-3"
+            class="col-12 col-sm-6 col-md-4"
             v-for="price in prices"
             :key="price.id"
           >
-            <div class="pricing-table gprice-single full-height">
+            <div class="pricing-table gprice-single full-height bg-white">
               <div class="head">
                 <div class="title mb-3">{{ price.catagory }}</div>
               </div>
@@ -49,7 +49,7 @@ export default {
   name: "PricingTable",
   data() {
     return {
-      sectiontitle: "EXECUTIVE WASH PACKAGES",
+      sectiontitle: " executive wash packages",
       prices: [
         {
           id: 1,
@@ -65,11 +65,6 @@ export default {
           id: 3,
           catagory: "Gold",
           value: "20"
-        },
-        {
-          id: 4,
-          catagory: "Plutinum",
-          value: "20"
         }
       ]
     };
@@ -81,6 +76,10 @@ export default {
 </script>
 
 <style>
+.pricitable__wrapper {
+  padding-top: 100px;
+  padding-top: 100px;
+}
 .pricing-table {
   box-shadow: 0px 0px 18px #ccc;
   text-align: center;

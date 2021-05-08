@@ -1,16 +1,13 @@
 <template>
   <div class="q-pb-xl">
     <div class="">
-      <q-parallax src="/What-we-do/cars-bg.jpg">
-        <!-- <template v-slot:media>
-          <img src="https://cdn.quasar.dev/img/parallax1.jpg" />
-        </template> -->
+      <div class="section__wrapper section__bg">
         <div class="container-lg">
           <div class="q-px-lg">
             <div class="row q-col-gutter-lg">
               <div class="col-12 col-sm-12 col-md-6">
                 <h1
-                  class=" text-dark q-ma-none text-uppercase text-h2 q-mb-lg "
+                  class=" text-dark q-ma-none text-capitalize text-weight-bolder text-h2 q-mb-lg "
                 >
                   what we do
                 </h1>
@@ -24,49 +21,14 @@
                 <q-btn class="btn__primary" label="Primary" size="lg" />
               </div>
               <div class="col-12 col-sm-6 col-md-6">
-                <div class="row q-col-gutter-md">
-                  <div class="col-md-6">
-                    <!-- <q-card class="my-card">
-                      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-                        <div class="text-h5 absolute-bottom text-right">
-                          Title
-                        </div>
-                      </q-img>
-                    </q-card> -->
-                  </div>
-                  <div class="col-md-6">
-                    <!-- <q-card class="my-card">
-                      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-                        <div class="text-h5 absolute-bottom text-right">
-                          Title
-                        </div>
-                      </q-img>
-                    </q-card> -->
-                  </div>
-                  <div class="col-md-6">
-                    <!-- <q-card class="my-card">
-                      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-                        <div class="text-h5 absolute-bottom text-right">
-                          Title
-                        </div>
-                      </q-img>
-                    </q-card> -->
-                  </div>
-                  <div class="col-md-6">
-                    <!-- <q-card class="my-card">
-                      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-                        <div class="text-h5 absolute-bottom text-right">
-                          Title
-                        </div>
-                      </q-img>
-                    </q-card> -->
-                  </div>
+                <div class="section__image">
+                  <img src="/what-we-do/what-we-do-bg-2.svg" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </q-parallax>
+      </div>
     </div>
   </div>
 </template>
@@ -80,4 +42,45 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.section__wrapper {
+  padding: 100px 0px;
+}
+.section__bg {
+  position: relative;
+}
+.section__bg::after {
+  background: #ffffff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ffffff),
+    color-stop(transparent),
+    to(#ffffff)
+  );
+  background: linear-gradient(to right, #ffffff, transparent, #ffffff);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  top: 0;
+  left: 0;
+  content: "";
+}
+.section__bg::before {
+  content: "";
+  position: absolute;
+  background-image: url("/what-we-do/dot-gray.png");
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -10;
+  background-repeat: repeat;
+  background-color: #f1f7ff;
+}
+.section__image img {
+  width: 100%;
+}
+</style>

@@ -3,7 +3,6 @@
     <q-header elevated>
       <EssentialLink></EssentialLink>
     </q-header>
-
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -16,7 +15,7 @@
 import EssentialLink from "components/EssentialLink.vue";
 import Footer from "components/Footer.vue";
 export default {
-  components: { EssentialLink,Footer },
+  components: { EssentialLink, Footer },
   name: "Layout",
   data() {
     return {

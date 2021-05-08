@@ -1,9 +1,8 @@
 <template>
   <div class="text-dark container-lg   q-pb-xl">
     <SectionHeader :title="sectiontitle"></SectionHeader>
-    <div class="slide">
+    <div class="slide testimonial__wrapper">
       <div class="ancestor" id="box-1">
-      
         <div class="slide_text">
           <p id="tanya_text" v-if="!isHidden">
             “I’ve been interested in coding for a while but never taken the
@@ -37,12 +36,10 @@
           <!-- (isHidden = !isHidden) -->
           <span @click="prev(), (isHidden = !isHidden)">
             <img src="images/icon-prev.svg" class="nav-left" alt="prev-img" />
-            
           </span>
           <!-- (isHidden = !isHidden) -->
           <span @click="next(), (isHidden = !isHidden)">
             <img src="images/icon-next.svg" class="nav-right" alt="next-img" />
-            
           </span>
         </div>
       </div>
@@ -57,7 +54,7 @@ export default {
   data: () => {
     return {
       count: 0,
-      sectiontitle: "WHAT OUR CLIENTS SAY",
+      sectiontitle: "what our client says",
       slide: "style",
       isHidden: false,
       images: ["/images/image-tanya.jpg", "/images/image-john.jpg"]
@@ -80,6 +77,9 @@ export default {
 </script>
 
 <style>
+.testimonial__wrapper {
+  padding: 50px 0px 100px 0px;
+}
 .ancestor {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
@@ -90,14 +90,10 @@ export default {
 }
 
 .slide {
-  
-  background-image: url("/images/pattern-bg.svg"),
-    url("/images/pattern-bg.svg");
+  background-image: url("/images/pattern-bg.svg"), url("/images/pattern-bg.svg");
   background-position: center right, left bottom, left top;
   background-repeat: no-repeat;
-  
 }
-
 
 .slide_text {
   background-image: url("/images/pattern-quotes.svg");

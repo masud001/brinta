@@ -5,9 +5,9 @@
     <PriceWizard></PriceWizard>
     <WhatWeDo></WhatWeDo>
     <PricingTable></PricingTable>
-    <Features></Features>
+    <!-- <Features></Features> -->
+    <FeatureWorks></FeatureWorks>
     <Testimonials></Testimonials>
-    
   </q-page>
 </template>
 
@@ -19,6 +19,7 @@ import Features from "components/Features.vue";
 import WhatWeDo from "components/WhatWeDo.vue";
 import PricingTable from "components/PricingTable.vue";
 import Testimonials from "components/Testimonials.vue";
+import FeatureWorks from "components/FeatureWorks.vue";
 
 export default {
   name: "PageIndex",
@@ -29,10 +30,11 @@ export default {
     // HomeSlider,
     HeroArea,
     PriceWizard,
-    Features,
+    // Features,
     WhatWeDo,
     PricingTable,
     Testimonials,
+    FeatureWorks
   }
 };
 </script>
