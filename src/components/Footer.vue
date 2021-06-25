@@ -2,6 +2,17 @@
   <div>
     <!-- Footer Area-->
     <footer class="footer-area section-padding-130">
+      <!-- footer animation  -->
+      <div class="highway"></div>
+      <div class="city"></div>
+      <div class="car">
+        <img src="images/footer/car.png" alt="" srcset="">
+      </div>
+      <div class="wheel">
+        <img src="images/footer/wheel.png" class="back_wheel" alt="" srcset="">
+        <img src="images/footer/wheel.png" class="front_wheel" alt="" srcset="">
+      </div>
+      <!-- footer animation end  -->
       <div class="container">
         <div class="row q-col-gutter-md">
           <!-- Single Widget-->
@@ -119,13 +130,106 @@ export default {
   position: relative;
   margin-top: 50px;
   z-index: 1;
-  background-color: #151e2e;
+  background-color: #BBDEFB;
   padding-top: 50px;
   padding-bottom: 100px;
+  background-image: url('/images/footer/sky.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.highway{
+  position: absolute;
+  width: 500%;
+  height: 150px;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("/images/footer/road.jpg");
+  background-repeat: repeat-x;
+  z-index: 1;
+  animation: highway 10s linear infinite;
+}
+@keyframes highway {
+  100%{
+    transform: translateX(-3400px);
+  }
+}
+.city{
+   position: absolute;
+  width: 500%;
+  height: 250px;
+  display: block;
+  bottom: 150px;
+  left: 0;
+  right: 0;
+  background-image: url("/images/footer/city.png");
+  background-repeat: repeat-x;
+  z-index: 1;
+  animation: city 40s linear infinite;
+}
+
+@keyframes city {
+  100%{
+    transform: translateX(-1400px);
+  }
+}
+
+.car{
+    width: 300px;
+    left: 18%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.car img{
+  width: 100%;
+  animation: car 1s linear infinite;
+}
+@keyframes car {
+  100%{
+    transform: translateY(-2px);
+  }
+  50%{
+    transform: translateY(2px);
+  }
+  0%{
+    transform: translateY(-2px);
+  }
+}
+.wheel{
+  left: 18%;
+  bottom: 92px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+.wheel img{
+  width: 55px;
+  height: 55px;
+  animation: wheel 1s linear infinite;
+}
+.back_wheel{
+  position: absolute;
+  left: -124px;
+}
+.front_wheel{
+  position: absolute;
+  left: 60px;
+}
+@keyframes wheel{
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 .footer__text p {
-  color: rgba(255, 255, 255, 0.65);
+  color: #000;
+   text-shadow: 1px 1px #ffffff;
+    mix-blend-mode: difference;
 }
 .footer-menu ul {
   margin: 0;
@@ -138,15 +242,18 @@ export default {
 }
 .single-footer-widget .widget-title {
   margin-bottom: 1.3rem;
-  color: #ffffff;
+  color: #080808;
+    mix-blend-mode: difference;
 }
 .single-footer-widget .footer-menu li a {
-  color: rgba(255, 255, 255, 0.65);
+  color: #000;
+   text-shadow: 1px 1px #ffffff;
   margin-bottom: 0.875rem;
   display: block;
   font-size: 0.875rem;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
+    mix-blend-mode: difference;
 }
 .single-footer-widget .footer-menu li a:hover,
 .single-footer-widget .footer-menu li a:focus {
