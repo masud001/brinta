@@ -2,7 +2,19 @@
   <div class="q-pb-xl">
     <div class="container-md">
       <SectionHeader :title="sectiontitle"></SectionHeader>
-      <div class="q-px-lg pricitable__wrapper">
+      <div class="q-px-lg price_table__wrapper">
+        <!-- Circle Shape Animation-->
+        <div class="circle-shape-animation">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <div class="circle3"></div>
+          <div class="circle4"></div>
+          <div class="circle5"></div>
+          <div class="circle6"></div>
+          <div class="circle7"></div>
+          <div class="circle8"></div>
+        </div>
+
         <div class="row q-col-gutter-lg">
           <div
             class="col-12 col-sm-6 col-md-4"
@@ -76,9 +88,10 @@ export default {
 </script>
 
 <style>
-.pricitable__wrapper {
+.price_table__wrapper {
   padding-top: 100px;
   padding-top: 100px;
+  position: relative;
 }
 .pricing-table {
   box-shadow: 0px 0px 18px #ccc;
@@ -198,5 +211,130 @@ export default {
 .pricing-table:hover .btn.bordered:after {
   opacity: 0;
   transform: scale(0);
+}
+
+.circle-shape-animation .circle1 {
+  width: 30px;
+  height: 30px;
+  background-color: #0d6efd;
+  position: absolute;
+  top: 19%;
+  left: 16%;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0.15;
+  -webkit-animation: circle-zoom-in-out linear 12s infinite;
+  animation: circle-zoom-in-out linear 12s infinite;
+}
+.circle-shape-animation .circle2 {
+  width: 30px;
+  height: 30px;
+  background-color: #f4284a;
+  position: absolute;
+  top: 24%;
+  left: 77%;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0.15;
+  -webkit-animation: circle-zoom-in-out linear 9s infinite;
+  animation: circle-zoom-in-out linear 9s infinite;
+}
+.circle-shape-animation .circle3 {
+  width: 30px;
+  height: 30px;
+  background-color: #f1c40f;
+  position: absolute;
+  top: 64%;
+  left: 91%;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0.15;
+  -webkit-animation: circle-zoom-in-out linear 16s infinite;
+  animation: circle-zoom-in-out linear 16s infinite;
+}
+.circle-shape-animation .circle4 {
+  width: 40px;
+  height: 40px;
+  background-color: #f1c40f;
+  position: absolute;
+  top: 74%;
+  left: 36%;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0.15;
+  -webkit-animation: circle-zoom-in-out linear 10s infinite;
+  animation: circle-zoom-in-out linear 10s infinite;
+}
+.circle-shape-animation .circle5 {
+  width: 100px;
+  height: 100px;
+  background-color: #f1c40f;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0.15;
+  -webkit-animation: circle-zoom-in-out linear 10s infinite;
+  animation: circle-zoom-in-out linear 10s infinite;
+}
+.circle-shape-animation .circle6 {
+  width: 60px;
+  height: 60px;
+  background-color: #f1c40f;
+  position: absolute;
+  top: 13%;
+  left: 0%;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0.15;
+  animation: circle-zoom-in-out linear 10s infinite;
+}
+.circle-shape-animation .circle7 {
+  width: 70px;
+  height: 70px;
+  background-color: #671696;
+  position: absolute;
+  top: 53%;
+  left: 100%;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0.15;
+  animation: circle-zoom-in-out linear 10s infinite;
+}
+.circle-shape-animation .circle8 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  top: 62%;
+  left: -5%;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0.15;
+  -webkit-animation: circle-zoom-in-out linear 10s infinite;
+  animation: circle-zoom-in-out linear 10s infinite;
+}
+
+@-webkit-keyframes circle-zoom-in-out {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+
+@keyframes circle-zoom-in-out {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
 }
 </style>
