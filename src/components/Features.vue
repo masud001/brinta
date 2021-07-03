@@ -1,7 +1,7 @@
 <template>
   <div class="bg-blue-1">
     <div class="container-lg">
-      <SectionHeader :title="sectiontitle"></SectionHeader>
+      <SectionHeader :title="sectionTitle"></SectionHeader>
       <div class="q-px-lg q-py-xl">
         <div class="row q-col-gutter-lg">
           <div
@@ -48,7 +48,7 @@ export default {
   name: "Features",
   data() {
     return {
-      sectiontitle: "featured works",
+      sectionTitle: "featured works",
       showText: {},
       featuresData: [
         {

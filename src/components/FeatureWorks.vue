@@ -1,6 +1,6 @@
 <template>
-  <div class="feature__wrapper  bg__color">
-    <SectionHeader :title="sectiontitle"></SectionHeader>
+  <div class="feature__wrapper  bg__color q-px-md">
+    <SectionHeader :title="sectionTitle"></SectionHeader>
     <div class="features__section">
       <div class="container-md">
         <div class="row q-col-gutter-lg">
@@ -8,18 +8,23 @@
             <div class="feature__block full-height bg-white">
               <div class="feature__img">
                 <q-img
-                  src="/feature-images/blog-7.jpg"
+                  src="/feature-images/feature-1.jpg"
                   :ratio="16 / 9"
                   alt=""
                 />
               </div>
               <div class="feature__text q-pa-lg">
                 <p class=" q-mb-sm q-mr-lg">
-                  <q-icon name="far fa-calendar-alt" /> dd/mm/yy
+                  <q-icon name="far fa-calendar-alt" /> 03/July/2021
                 </p>
                 <a class="text-h5 no-margin" href="/"
                   >Hand Wash / Machine Wash</a
                 >
+                <p class=" q-mb-sm q-mr-lg text-subtitle1 ">
+                  We offer speedy service with our state of the art tunnel wash
+                  or you can ask for a VIP Hand Wash Service. We provide a wide
+                  variety of services...
+                </p>
               </div>
               <q-item class=" q-py-md ">
                 <q-item-section avatar>
@@ -35,18 +40,22 @@
             <div class="feature__block full-height bg-white">
               <div class="feature__img">
                 <q-img
-                  src="/feature-images/blog-7.jpg"
+                  src="/feature-images/feature-2.jpg"
                   :ratio="16 / 9"
                   alt=""
                 />
               </div>
               <div class="feature__text q-pa-lg">
                 <p class=" q-mb-sm q-mr-lg">
-                  <q-icon name="far fa-calendar-alt" /> dd/mm/yy
+                  <q-icon name="far fa-calendar-alt" /> 03/July/2021
                 </p>
                 <a class="text-h5 no-margin" href="/"
-                  >Hand Wash / Machine Wash</a
+                  >Complete Detail Services</a
                 >
+                <p class=" q-mb-sm q-mr-lg text-subtitle1 ">
+                  From waxing to shampooing, scratch removal to headlight
+                  restoration, we do it all. Come on in and visit us now.
+                </p>
               </div>
               <q-item class=" q-py-md ">
                 <q-item-section avatar>
@@ -62,18 +71,21 @@
             <div class="feature__block full-height bg-white">
               <div class="feature__img">
                 <q-img
-                  src="/feature-images/blog-7.jpg"
+                  src="/feature-images/feature-3.jpg"
                   :ratio="16 / 9"
                   alt=""
                 />
               </div>
               <div class="feature__text q-pa-lg">
                 <p class=" q-mb-sm q-mr-lg">
-                  <q-icon name="far fa-calendar-alt" /> dd/mm/yy
+                  <q-icon name="far fa-calendar-alt" /> 03/July/2021
                 </p>
-                <a class="text-h5 no-margin" href="/"
-                  >Hand Wash / Machine Wash</a
-                >
+                <a class="text-h5 no-margin" href="/">BECOME A VIP MEMBER</a>
+                <p class=" q-mb-sm q-mr-lg text-subtitle1 ">
+                  Receive 10% Cash Back in form of reward points on every
+                  transaction. You can redeem you points and use them towards
+                  any detail of your choice.
+                </p>
               </div>
               <q-item class=" q-py-md ">
                 <q-item-section avatar>
@@ -97,7 +109,7 @@ export default {
   name: "FeatureWorks",
   data() {
     return {
-      sectiontitle: "featured works"
+      sectionTitle: "featured works"
     };
   },
   components: {

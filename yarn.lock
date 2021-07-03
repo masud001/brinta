@@ -1089,6 +1089,18 @@
   resolved "https://registry.yarnpkg.com/@quasar/fastclick/-/fastclick-1.1.4.tgz#21ed3e9a4387dcb43022a08af4ef08a5f1abf159"
   integrity sha512-i9wbyV4iT+v4KhtHJynUFhH5LiEPvAEgSnwMqPN4hf/8uRe82nDl5qP5agrp2el1h0HzyBpbvHaW7NB0BPrtvA==
 
+"@quasar/quasar-app-extension-qcalendar@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@quasar/quasar-app-extension-qcalendar/-/quasar-app-extension-qcalendar-3.4.0.tgz#aa4b0aa4fda0585aeabdd62e094971ee0d6b640c"
+  integrity sha512-23ZdWZaHb8/gk6U9CA7KHSexMHlTaIOZeLnhjwf1wPLzBcECauhmrELHrNrUaj5PAW7WrLj4hB85QcemWHqv9g==
+  dependencies:
+    "@quasar/quasar-ui-qcalendar" "^3.4.0"
+
+"@quasar/quasar-ui-qcalendar@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@quasar/quasar-ui-qcalendar/-/quasar-ui-qcalendar-3.4.0.tgz#40921aef63e88d17f714445b165c57ea38e2ee4a"
+  integrity sha512-1CM2u/ouW2YoNpnUs8K+ULCUyn75Nk7P8iXILTWfzDYbfq7vR1hf3miav1wGKOOXsyboN5FTpX8TKUdOJBm+3g==
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"

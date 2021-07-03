@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <!-- Welcome Area-->
-    <section class="bg-color hero-section welcome-area ">
+    <section class="bg-color hero-section welcome-area q-px-lg ">
       <!-- Circle Shape Animation-->
       <div class="circle-shape-animation">
         <div class="circle1"></div>
@@ -26,7 +26,9 @@
                 We are equipped with the best washing equipments that will make
                 your car pretty in just a few minutes.
               </h5>
-              <div class="button-group d-flex align-items-center mt-30 ">
+              <div
+                class="button-group d-flex align-items-center mt-30 q-mb-lg "
+              >
                 <q-btn class="btn__primary" label="learn more" />
               </div>
             </div>
@@ -34,7 +36,7 @@
           <div class="col-12 col-md-6 ">
             <!-- Welcome Image-->
             <div class="welcome-area-thumb text-center">
-              <img src="/hero-area/coming-soon.png" alt="" />
+              <img src="/images/cars.svg" alt="" />
             </div>
           </div>
         </div>

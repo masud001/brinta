@@ -1,31 +1,15 @@
 <template>
   <div class="service__page__wrapper">
-    <!-- servicing banner START -->
-    <div
-      class="service__page_banner  section__bg flex justify-center q-py-lg items-center"
-    >
-      <div class="service__content text-center">
-        <h1 class="text-capitalize q-my-none text-weight-bold">
-          our service
-        </h1>
-        <p class=" text-h4  q-my-none text-capitalize ">
-          Home
-          <span>
-            <!-- <q-icon name="fas fa-angle-right" /> -->
-            >
-          </span>
-          service
-        </p>
-      </div>
-    </div>
-    <!-- servicing banner END -->
+    <!-- page banner START -->
+    <PageBanner title="services"></PageBanner>
+    <!-- page banner END -->
 
     <!-- service page what we do section start  -->
-    <div class="section__wrapper q-py-lg">
+    <div class="section__wrapper q-py-lg q-px-md">
       <div
         class="section__title q-mt-lg q-pb-lg flex justify-center text-center"
       >
-        <div class="service__content text-center">
+        <div class="banner__content text-center">
           <p class=" text-capitalize text-h5 text-weight-bold ">
             what we do
           </p>
@@ -129,13 +113,16 @@
       </div>
     </div>
     <!-- servicing news letter END -->
+    <SpecialService></SpecialService>
   </div>
 </template>
 
 <script setup>
 import PricingTable from "components/PricingTable.vue";
+import SpecialService from "components/SpecialService.vue";
 import CarteServices from "components/CarteServices.vue";
 import WashServices from "components/WashServices.vue";
+import PageBanner from "components/PageBanner.vue";
 export default {
   name: "PageServicePage",
   data() {
@@ -143,29 +130,15 @@ export default {
   },
   components: {
     PricingTable,
+    SpecialService,
     CarteServices,
-    WashServices
+    WashServices,
+    PageBanner
   }
 };
 </script>
 
 <style lang="scss" scoped>
-.service__page_banner.section__bg {
-  background-color: #ededed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("/images/service/service-banner.jpg"),
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(70, 66, 66, 0.5));
-  background-blend-mode: overlay;
-  height: 500px;
-}
-
-.service__content {
-  background: -webkit-linear-gradient(rgb(69, 41, 85), rgb(164, 11, 224));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .single__service {
   border-bottom: 2px solid rgb(161, 34, 211);
   .service__image {

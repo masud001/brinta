@@ -1,26 +1,25 @@
 <template>
-  <div class="text-dark container-lg   q-pb-xl">
+  <div class="text-dark container-lg   q-pb-xl q-px-md">
     <SectionHeader :title="sectiontitle"></SectionHeader>
     <div class="slide testimonial__wrapper">
       <div class="ancestor" id="box-1">
         <div class="slide_text">
           <p id="tanya_text" v-if="!isHidden">
-            “I’ve been interested in coding for a while but never taken the
-            jump, until now. I couldn’t recommend this course enough. I’m now in
-            the job of my dreams and so excited about the future.”
+            “Best car wash around. Always do an amazing job, detailed work,
+            price is great. I moved to plantation and still drive out to get my
+            car detailed”
           </p>
           <p id="john_text" v-else>
-            “If you want to lay the best foundation possible I’d recommend
-            taking this course. The depth the instructors go into is incredible.
-            I now feel so confident about starting up as a professional
-            developer.”
+            “I'm picky about my car washes. Executive is among the best. I'm so
+            happy it's close to my home and the price is right. I'll be a
+            regular.”
           </p>
           <p class="name" v-if="!isHidden">
-            Tanya Sinclair <span class="profession">UX Engineer</span>
+            Ryan Yocum <span class="profession">Car Owner</span>
           </p>
           <p class="name" v-else>
-            John Tarkpor
-            <span class="profession">Junior Front-end Developer</span>
+            Dean Gaveau
+            <span class="profession">Car Owner</span>
           </p>
         </div>
 
@@ -266,7 +265,7 @@ export default {
 @media only screen and (max-width: 600px) {
   .ancestor {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 2fr;
     grid-template-rows: auto auto;
     place-items: center;
   }

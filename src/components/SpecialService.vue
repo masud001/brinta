@@ -49,32 +49,28 @@
 <script>
 import SectionHeader from "./SectionHeader";
 export default {
-  name: "PricingTable",
+  name: "SpecialService",
   data() {
     return {
-      sectionTitle: " executive wash packages",
+      sectionTitle: " Our special services",
       prices: [
         {
           id: 1,
-          category: "SuperVisor's Package",
-          value: "15",
-          items: ["Exterior Wash", "Outside Windows", "Towel Dry", "Tire Shine"]
+          category: "SUPER SHINE POLISH",
+          value: "99",
+          items: ["light Claybar", "Highspeed 3m Polish", "Carnuba Wax"]
         },
         {
           id: 2,
-          category: "Director's Package",
-          value: "20",
-          items: [
-            "Exterior Wash, Vacuum All Carpets,",
-            "Outside/Inside Windows, Tire Shine",
-            "Interior Wipe Down, Air Freshener"
-          ]
+          category: "SWIRL REMOVAL SERVICE",
+          value: "149",
+          items: ["3m Swirl removal", "3m Polish", "Carnuba Wax"]
         },
         {
           id: 3,
-          category: "Manager's Package",
-          value: "25",
-          items: ["Exterior Wash", "Outside Windows", "Towel Dry", "Tire Shine"]
+          category: "WET SAND",
+          value: "199",
+          items: ["Wet sand", "Compound", "Swirl Removal", "Polish Wax"]
         },
         {
           id: 4,
@@ -84,40 +80,21 @@ export default {
         },
         {
           id: 5,
-          category: "Presidential Package",
-          value: "50",
-          items: [
-            "Exterior Works",
-            "Carnauba Wax Service",
-            "Includes Manager’s Package"
-          ]
+          category: "COMPOUND",
+          value: "149",
+          items: []
         },
         {
           id: 6,
-          category: "Ultra Presidential Package",
-          value: "65",
-          items: ["Includes Manager’s Package", "Carnauba PASTE Wax Service"]
+          category: "SCRATCH REMOVAL",
+          value: "24",
+          items: ["Per Scratch"]
         },
         {
           id: 7,
-          category: "Executive Package",
-          value: "80",
-          items: [
-            "Complete Interior Cleaning",
-            "Leather treatment",
-            "Includes Manager’s Package"
-          ]
-        },
-        {
-          id: 8,
-          category: "Chairman's Package",
-          value: "120",
-          items: [
-            "Starting at $120.00",
-            "Full Vehicle Detail",
-            "Ultimate Interior & Exterior",
-            "Includes Presidential Package"
-          ]
+          category: "HEADLIGHT RESTORATION",
+          value: "39",
+          items: []
         }
       ]
     };

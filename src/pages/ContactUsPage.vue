@@ -1,11 +1,8 @@
 <template>
   <div class="">
     <div class="row items-center">
-      <div class="left-col col-12 col-md-6">
-        <img
-          class="logo"
-          src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/logo.png"
-        />
+      <div class="left-col justify-around  col-12 col-md-6">
+        <img class="image-bg" src="/images/contact-bg.png" />
       </div>
       <div class="right-col  col-12 col-md-6">
         <h1>Contact us</h1>
@@ -66,9 +63,16 @@
   transition: all 0.3s ease-in-out;
 }
 
+.left-col .image-bg {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .left-col {
   height: 100vh;
-  background-image: url("https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  /* background-image: url("https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"); */
   background-size: cover;
   background-repeat: no-repeat;
 }

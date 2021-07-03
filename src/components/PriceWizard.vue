@@ -2,7 +2,7 @@
   <div class="car__wizard_wrapper container-lg">
     <div class="q-px-lg q-py-xl">
       <div class="q-col-gutter-xl  row items-start">
-        <div class="col-4 text-center">
+        <div class="col-12 col-md-4 text-center">
           <q-img class="q-mb-lg" src="/price-wizard/car-1.svg" />
           <h6 class="no-margin">Car</h6>
           <h4 class="no-margin text-deep-purple-13 text-weight-bolder">
@@ -10,7 +10,7 @@
           </h4>
         </div>
 
-        <div class="col-4 text-center">
+        <div class="col-12 col-md-4 text-center">
           <q-img class="q-mb-lg" src="/price-wizard/car-2.svg" />
           <h6 class="no-margin">Mid-Size Truck/SUV</h6>
           <h4 class="no-margin  text-deep-purple-13 text-weight-bolder">
@@ -18,11 +18,11 @@
           </h4>
         </div>
 
-        <div class="col-4 text-center">
+        <div class="col-12 col-md-4 text-center">
           <q-img class="q-mb-lg" src="/price-wizard/car-3.svg" />
           <h6 class="no-margin">Full-Size Truck/SUV</h6>
           <h4 class="no-margin  text-deep-purple-13 text-weight-bolder">
-            $20 & UP
+            $25 & UP
           </h4>
         </div>
       </div>

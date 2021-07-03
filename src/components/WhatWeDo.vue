@@ -18,7 +18,7 @@
                   pretty in just a few minutes. Want your car to get a shiny
                   look? Our team will take care of that!
                 </div>
-                <q-btn class="btn__primary" label="Primary" size="lg" />
+                <q-btn class="btn__primary" label="Learn more" size="lg" />
               </div>
               <div class="col-12 col-sm-6 col-md-6">
                 <div class="section__image">
