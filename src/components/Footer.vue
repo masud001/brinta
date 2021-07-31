@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Footer Area-->
-    <footer class="footer-area section-padding-130">
+    <footer class="footer-area">
       <!-- footer animation  -->
       <!-- <div class="highway"></div>
       <div class="city"></div>
@@ -14,9 +14,9 @@
       </div> -->
       <!-- footer animation end  -->
       <div class="container q-px-md">
-        <div class="row q-col-gutter-md">
+        <div class="row q-col-gutter-xl">
           <!-- Single Widget-->
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <div class="col-12 col-sm-6 col-md">
             <div class="single-footer-widget">
               <!-- Widget Title-->
               <h5 class="widget-title">About us</h5>
@@ -37,7 +37,7 @@
             </div>
           </div>
           <!-- Single Widget-->
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <div class="col-12 col-sm-6 col-md-auto">
             <div class="single-footer-widget">
               <!-- Widget Title-->
               <h5 class="widget-title">My Services</h5>
@@ -59,7 +59,7 @@
             </div>
           </div>
           <!-- Single Widget-->
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <div class="col-12 col-sm-6 col-md">
             <div class="single-footer-widget">
               <!-- Widget Title-->
               <h5 class="widget-title">Sign up for E-mail Deal</h5>
@@ -71,8 +71,8 @@
                 </p>
               </div>
               <div class="email__area">
-                <input class="exec_email full-width" placeholder="Email" />
-                <q-btn class="btn__primary q-mt-lg" label="Subscribe" />
+                <input class="exec_email full-width" placeholder="Email"/>
+                <q-btn class="btn__primary q-mt-lg" label="Subscribe"/>
               </div>
             </div>
           </div>
@@ -87,17 +87,19 @@
           <div class="">
             All Rights Reserved by &copy;
             <span class=" text-weight-bold text-h6"
-              >Executive Wash & Detail</span
+            >Executive Wash & Detail</span
             >
           </div>
           <div class="footer__bottom_social_icon">
             <span class=" q-mr-lg text-h6 text-capitalize">Follow us : </span>
             <a href="/" class=" text-white text-h5">
               <q-icon name="fab fa-facebook"
-            /></a>
+              />
+            </a>
             <a href="/" class=" text-white text-h5">
               <q-icon name="fab fa-twitter"
-            /></a>
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -123,6 +125,7 @@ export default {
     margin-left: 15px;
     display: inline-block;
     text-decoration: none;
+
     i {
       &:hover,
       &:focus {
@@ -131,18 +134,30 @@ export default {
     }
   }
 }
+
 .footer-area {
+  font-size: 1rem;
   position: relative;
-  margin-top: 50px;
   z-index: 1;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  background-color: #8e2de2;
   background-image: url("/images/footer/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   overflow: hidden;
+
+  .container {
+    padding: 75px;
+    background-color: #333333;
+    opacity: .9;
+    color: white;
+
+    .widget-title, .footer__text p, ul li a {
+      color: white;
+    }
+  }
 }
+
 .highway {
   position: absolute;
   width: 500%;
@@ -156,11 +171,13 @@ export default {
   z-index: 1;
   animation: highway 10s linear infinite;
 }
+
 @keyframes highway {
   100% {
     transform: translateX(-3400px);
   }
 }
+
 .city {
   position: absolute;
   width: 500%;
@@ -189,10 +206,12 @@ export default {
   position: absolute;
   z-index: 2;
 }
+
 .car img {
   width: 100%;
   animation: car 1s linear infinite;
 }
+
 @keyframes car {
   100% {
     transform: translateY(-2px);
@@ -204,6 +223,7 @@ export default {
     transform: translateY(-2px);
   }
 }
+
 .wheel {
   left: 18%;
   bottom: 92px;
@@ -211,19 +231,23 @@ export default {
   position: absolute;
   z-index: 2;
 }
+
 .wheel img {
   width: 55px;
   height: 55px;
   animation: wheel 1s linear infinite;
 }
+
 .back_wheel {
   position: absolute;
   left: -124px;
 }
+
 .front_wheel {
   position: absolute;
   left: 60px;
 }
+
 @keyframes wheel {
   100% {
     transform: rotate(360deg);
@@ -235,34 +259,39 @@ export default {
   /* text-shadow: 1px 1px #ffffff; */
   /* mix-blend-mode: difference; */
 }
+
 .footer-menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .single-footer-widget {
   position: relative;
   z-index: 1;
 }
+
 .single-footer-widget .widget-title {
   margin-bottom: 1.3rem;
   color: #080808;
   mix-blend-mode: difference;
 }
+
 .single-footer-widget .footer-menu li a {
   color: #000;
   /* text-shadow: 1px 1px #ffffff; */
   margin-bottom: 0.875rem;
   display: block;
-  font-size: 0.875rem;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   /* mix-blend-mode: difference; */
 }
+
 .single-footer-widget .footer-menu li a:hover,
 .single-footer-widget .footer-menu li a:focus {
   color: rgb(135, 40, 226);
 }
+
 .single-footer-widget .footer-menu li:last-child a {
   margin-bottom: 0;
 }
@@ -270,6 +299,7 @@ export default {
 .app-download-btn-group a img {
   max-width: 180px;
 }
+
 .exec_email {
   border: 1px solid rgba(43, 40, 40, 0.65);
   background-color: transparent;
@@ -277,8 +307,10 @@ export default {
   color: rgba(255, 255, 255, 0.65);
   border-radius: 3px;
 }
+
 .exec_email:hover {
 }
+
 .exec_email:focus {
   border: 1px solid #000000 !important;
   border-radius: 3px;
@@ -289,5 +321,6 @@ export default {
   z-index: 1;
   background-color: #0d131c;
   color: rgba(255, 255, 255, 0.65);
+  //background-image: url("/images/footer/bg.jpg");
 }
 </style>
