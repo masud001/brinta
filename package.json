@@ -6,7 +6,7 @@
   "author": "masud001 <madhnagar@gmail.com>",
   "private": true,
   "scripts": {
-    "start": "quasar dev",
+    "dev": "quasar dev",
     "build": "quasar build"
   },
   "dependencies": {

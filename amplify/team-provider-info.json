@@ -1,0 +1,15 @@
+{
+  "landing": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-carwash-landing-175231-authRole",
+      "UnauthRoleArn": "arn:aws:iam::747357476750:role/amplify-carwash-landing-175231-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::747357476750:role/amplify-carwash-landing-175231-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-carwash-landing-175231-deployment",
+      "UnauthRoleName": "amplify-carwash-landing-175231-unauthRole",
+      "StackName": "amplify-carwash-landing-175231",
+      "StackId": "arn:aws:cloudformation:us-east-1:747357476750:stack/amplify-carwash-landing-175231/ef7759b0-f1f5-11eb-90d6-122a8762896b",
+      "AmplifyAppId": "d1o4sh9dg28m16"
+    }
+  }
+}
